@@ -1,0 +1,7 @@
+Copy the four supplied PDFs into this folder:
+- SAF-SOP-003_Lockout_Tagout_Procedure.pdf
+- QC-SOP-014_Rev04_Incoming_Material_Inspection.pdf
+- QC-SOP-014_Rev03_Incoming_Material_Inspection.pdf
+- MNT-MAN-CNC-02_TX-200_Preventive_Maintenance.pdf
+
+Do not rename them unless necessary. The indexer reads every *.pdf file in this folder.

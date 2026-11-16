@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101b2d">
+
+    <title>PlantAssist AI | Manufacturing Copilot</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">P</div>
+
+                <div>
+                    <h2>PlantAssist AI</h2>
+                    <p>Manufacturing Copilot</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <p class="section-label">WORKSPACE</p>
+
+                <button class="nav-item active">
+                    <span>◈</span>
+                    New conversation
+                </button>
+
+                <button class="nav-item" id="clearChat">
+                    <span>↻</span>
+                    Clear conversation
+                </button>
+            </div>
+
+            <div class="sidebar-info">
+                <div class="status-indicator"></div>
+
+                <div>
+                    <strong>Local document assistant</strong>
+                    <p>Connected to PlantAssist API</p>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>PlantAssist AI</p>
+                <span>Prototype · Evidence-based retrieval</span>
+            </div>
+
+        </aside>
+
+
+        <!-- Main application -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div class="mobile-brand">
+                    <div class="brand-icon">P</div>
+                    <strong>PlantAssist AI</strong>
+                </div>
+
+                <div class="topbar-right">
+                    <span class="connection-dot"></span>
+                    <span id="connectionStatus">Checking connection...</span>
+                </div>
+
+            </header>
+
+
+            <section class="workspace">
+
+                <div class="welcome-section" id="welcomeSection">
+
+                    <div class="welcome-icon">✦</div>
+
+                    <p class="eyebrow">MANUFACTURING KNOWLEDGE ASSISTANT</p>
+
+                    <h1>
+                        How can I help you<br>
+                        <span>on the shop floor?</span>
+                    </h1>
+
+                    <p class="welcome-description">
+                        Ask questions about machine maintenance, quality
+                        inspection and safety procedures. PlantAssist searches
+                        your supplied plant documents and displays its sources.
+                    </p>
+
+
+                    <div class="suggestion-heading">
+                        <span>TRY ASKING</span>
+                    </div>
+
+                    <div class="suggestion-grid">
+
+                        <button class="suggestion-card"
+                            data-question="What is the normal hydraulic pressure range for the TX-200 CNC machine?">
+
+                            <span class="suggestion-icon">⚙</span>
+
+                            <span>
+                                <strong>Machine maintenance</strong>
+                                <small>TX-200 hydraulic pressure</small>
+                            </span>
+
+                            <span class="suggestion-arrow">↗</span>
+                        </button>
+
+
+                        <button class="suggestion-card"
+                            data-question="What sample size is required for a lot of 100 incoming components?">
+
+                            <span class="suggestion-icon">◫</span>
+
+                            <span>
+                                <strong>Quality inspection</strong>
+                                <small>Incoming material sampling</small>
+                            </span>
+
+                            <span class="suggestion-arrow">↗</span>
+                        </button>
+
+
+                        <button class="suggestion-card"
+                            data-question="What should an operator do when the TX-200 shows alarm AL-101?">
+
+                            <span class="suggestion-icon">⚠</span>
+
+                            <span>
+                                <strong>Machine alarms</strong>
+                                <small>TX-200 alarm AL-101</small>
+                            </span>
+
+                            <span class="suggestion-arrow">↗</span>
+                        </button>
+
+
+                        <button class="suggestion-card"
+                            data-question="Where is the emergency evacuation assembly point at the Hosur plant?">
+
+                            <span class="suggestion-icon">?</span>
+
+                            <span>
+                                <strong>Missing information</strong>
+                                <small>Test whether PlantAssist abstains</small>
+                            </span>
+
+                            <span class="suggestion-arrow">↗</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Conversation -->
+                <section class="chat-section" id="chatSection">
+
+                    <div class="messages" id="messages"></div>
+
+                </section>
+
+
+                <!-- Input area -->
+                <div class="input-area">
+
+                    <form id="chatForm" class="chat-form">
+
+                        <textarea
+                            id="questionInput"
+                            rows="1"
+                            placeholder="Ask about a machine, SOP, alarm or quality procedure..."
+                            required
+                        ></textarea>
+
+                        <button type="submit" id="sendButton">
+                            <span>Send</span>
+                            <span class="send-icon">➤</span>
+                        </button>
+
+                    </form>
+
+                    <p class="input-disclaimer">
+                        PlantAssist retrieves document evidence. Always follow
+                        approved plant procedures and safety instructions.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>

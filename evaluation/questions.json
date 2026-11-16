@@ -1,0 +1,45 @@
+[
+  {
+    "question": "What is the LOTO process?",
+    "category": "safety",
+    "expected_document": "SAF-SOP-003"
+  },
+  {
+    "question": "What approvals are needed if a lock owner is absent?",
+    "category": "safety",
+    "expected_document": "SAF-SOP-003"
+  },
+  {
+    "question": "How many samples for a lot of 1,000?",
+    "category": "quality",
+    "expected_document": "QC-SOP-014",
+    "expected_revision": "04"
+  },
+  {
+    "question": "Which form is used for incoming inspection?",
+    "category": "quality",
+    "expected_document": "QC-SOP-014",
+    "expected_revision": "04"
+  },
+  {
+    "question": "What is the TX-200 hydraulic pressure range?",
+    "category": "maintenance",
+    "expected_document": "MNT-MAN-CNC-02"
+  },
+  {
+    "question": "What should happen for alarm AL-101?",
+    "category": "maintenance",
+    "expected_document": "MNT-MAN-CNC-02"
+  },
+  {
+    "question": "What did historical revision 03 specify for sampling?",
+    "category": "revision",
+    "expected_document": "QC-SOP-014",
+    "expected_revision": "03"
+  },
+  {
+    "question": "What is the emergency evacuation assembly point?",
+    "category": "unanswerable",
+    "expected_status": "abstained"
+  }
+]
