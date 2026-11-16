@@ -8,12 +8,5 @@
 - Historical revisions are excluded by default. Explicit historical queries can search historical chunks.
 - The system returns source excerpts rather than pretending retrieval alone is a verified operational answer.
 
-## Limitations to validate
 
-- Highest numeric revision is only a fallback heuristic. Confirm the plant's document-control rule before production use.
-- PDF templates vary; inspect `/api/documents` and ingestion errors after indexing.
-- Scanned PDFs require OCR, which is not included in this phase.
 
-## Personal reflection
-
-Add your own real observations after running and testing the project. Do not claim tests, user research or deployment that you have not performed.
